@@ -24,9 +24,7 @@
             //echo "La session a ete activer____";
             
         }
-        else {
-                
-           
+        else {                        
             //echo "La session est actif now";
             //echo "Le jeux a commencer \n";
            // echo "et la valeur a trouver est ". $_SESSION['randNbr'];
@@ -50,7 +48,7 @@
                     session_destroy();
                 }
 
-                //throw new Exception("ceci se produit car la valeur passer en argument de la fonction est ");
+                throw new Exception("ceci se produit car la valeur passer en argument de la fonction est ");
 
             }
            
