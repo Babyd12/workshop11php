@@ -16,10 +16,6 @@
     </form>    
     
     <?php 
-        
-        
-       
-        
         session_start();
         if( !isset($_SESSION['randNbr'])) {
             $_SESSION['randNbr'] = rand(1,10);

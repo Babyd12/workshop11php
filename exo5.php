@@ -14,6 +14,9 @@
         $arrayTest = array("1", "2", "3", "4", "5");
         $temp = 0;
         $moy = 0;
+        $arraySup = array();
+        $arrayInf = array();
+
         foreach($array as $value){            
             $temp += $value;
             $nbr = count($array,1);
@@ -21,7 +24,20 @@
              //echo "count " .$nbr;
         }
         echo "la moyennne de la liste stocker and le tableau est " .$moy ;
+
+        foreach($array as $value){
+            if($value >= $moy){
+                array_push($arraySup, $value);
+            }else{
+                array_push($arrayInf, $value);
+            }
+        }
+        print_r($arrayInf);
+        echo "<br>La lliste de nombre suppereur <\br>";
+        print_r($arraySup);
+
     ?>
-    
+
+
 </body>
 </html>

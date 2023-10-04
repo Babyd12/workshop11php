@@ -63,6 +63,8 @@ else {
 //echo date('d',$d);
 */
 
+
+
 function bisextile($year){
     $d = mktime(00, 00, 00, 1,01,$year);
     if( date('y',$d) %400 == 0 OR date('y',$d)%100 != 0 AND date('y',$d) %4 == 0) {
@@ -75,8 +77,9 @@ function bisextile($year){
     }
 }
 
-echo bisextile(1968); //
+echo bisextile(1969); //
 ?>
     
 </body>
 </html>
+
